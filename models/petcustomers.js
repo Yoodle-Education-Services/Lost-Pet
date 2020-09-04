@@ -26,7 +26,7 @@ const petcustomerSchema = new mongoose.Schema({
             type: String
 
         },
-        bread: {
+        breed: {
             type: String
 
         },
