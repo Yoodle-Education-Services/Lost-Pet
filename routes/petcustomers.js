@@ -36,7 +36,7 @@ petName:req.body.petName,
 bread: req.body.breed,
 description:req.body.description,
 // moreInfo: req.body.moreInfo, 
-location: req.body.locatio,
+location: req.body.location,
 
 })
 try {
