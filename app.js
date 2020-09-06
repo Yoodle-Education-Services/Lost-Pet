@@ -3,7 +3,13 @@ const express = require('express');
 const path = require('path');
 const cookieParser = require('cookie-parser');
 const logger = require('morgan');
+const host = process.env.DB_HOST || 'mongodb://127.0.0.1/petcustomers';
+
+const dbURL = `${host}`;
+const redline = require('readline');
+
 require('./models/petcustomers');
+require('dotenv').config();
 
 const routes = require('./routes/index');
 
@@ -12,7 +18,7 @@ const usersRouter = require('./routes/users');
 const app = express();
 
 const mongoose = require('mongoose');
-mongoose.connect('mongodb://localhost:/petcustomers', {useNewUrlParser: true, useUnifiedTopology: true });
+mongoose.connect(dbURL, {useNewUrlParser: true, useUnifiedTopology: true });
 const db = mongoose.connection
 db.on('error', (error) => console.error(error));
 db.once('open', () => console.log('Connected to Database'));
