@@ -1,0 +1,174 @@
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+<style>
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+  width: 1045px;
+}
+
+li {
+  float: right;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 15px 17px;
+  text-decoration: none;
+}
+
+/* Change the link color to #111 (black) on hover */
+li a:hover {
+  background-color:rgb(230, 145, 19);
+}
+.LL{
+background-color: #333;;
+
+}
+.moved{
+  background-color: lightgray;
+  float: right;
+  width: 580px;
+  padding-left: 45px;
+  padding-top: 35px;
+  margin-right: 500px;
+  padding-bottom: 20px;
+  margin-top: 20px;
+
+}
+.log1{
+  float: left;
+
+  padding-left: 50px;
+  width: 170px;
+  height: 50px;
+  padding-top: 15px;
+  padding-bottom: 10px;
+
+}
+
+.txtArea {
+
+    padding: 10px;
+    line-height: 2.5;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    box-shadow: 1px 1px 1px #999;
+}
+</style>
+
+
+
+<div class="LL">
+  <div>
+<img src="../assets/images/logoAngular.png" class="log1">
+</div>
+
+
+<div class="container">
+
+        <ul>
+
+            <li routerlinkActive="active"><a routerLink="/founded-item">Founded Item</a></li>
+            <li routerlinkActive="active"><a routerLink="/lost-item">Lost Item</a></li>
+            <li routerlinkActive="active"><a routerLink="/signin">Sign In</a></li>
+            <li routerlinkActive="active"><a routerLink="./registration">Registration</a></li>
+            <li routerlinkActive="active"><a routerLink="/contact-us">Contact us</a></li>
+            <li routerlinkActive="active"><a routerLink="/about-us">About us</a></li>
+            <li routerlinkActive="active"><a routerLink="/" >Home</a></li>
+
+        </ul>
+
+</div>
+
+</div>
+
+<div class="moved">
+    <h2>Get in touch and tell us what you lost or found</h2>
+
+<div>
+  <form [formGroup] ="userInformationForm" (ngSubmit)="onSubmit()">
+  <label>
+    First Name:
+    <br>
+    <input type="text" formControlName="firstName" placeholder="Your first name">
+ </label>
+<br>
+
+   <label>
+    Last Name:
+    <br>
+
+    <input type="text" formControlName="lastName">
+ </label>
+<br>
+
+   <label>
+     E-mail:
+     <br>
+    <input type="text" formControlName="email">
+ </label>
+<br>
+
+
+   <label>
+     Phone:
+<br>
+
+    <input type="phone" formControlName="phone">
+ </label>
+<br>
+
+   <label>
+     Pet Name, if any:
+<br>
+
+    <input type="text" formControlName="petName">
+ </label>
+<br>
+
+<label>
+     Breed:
+<br>
+
+    <input type="text" formControlName="breed">
+ </label>
+<br>
+
+
+   <label>
+     description:
+<br>
+
+<input type="textarea" formControlName="description"  class="txtArea">
+
+ </label>
+<br>
+
+   <label>
+<br>
+
+     Location:
+<br>
+
+    <input type="text" formControlName="location">
+ </label>
+<br>
+
+ <button type="submit" [disabled]="!userInformationForm.valid">Submit</button>
+</form>
+</div>
+</div>
+<hr>
+
+<router-outlet></router-outlet>
+
+
