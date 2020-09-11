@@ -41,17 +41,16 @@ background-color: #333;;
   padding-top: 35px;
   margin-right: 500px;
   padding-bottom: 20px;
-  margin-top: 20px;
 
 }
 .log1{
   float: left;
 
   padding-left: 50px;
-  width: 170px;
+  width: 160px;
   height: 50px;
   padding-top: 15px;
-  padding-bottom: 10px;
+  padding-bottom: 5px;
 
 }
 
@@ -86,13 +85,14 @@ background-color: #333;;
             <li routerlinkActive="active"><a routerLink="/" >Home</a></li>
 
         </ul>
-
+        <hr>
 </div>
 
 </div>
-
+<hr>
 <div class="moved">
     <h2>Get in touch and tell us what you lost or found</h2>
+
 
 <div>
   <form [formGroup] ="userInformationForm" (ngSubmit)="onSubmit()">
@@ -144,11 +144,14 @@ background-color: #333;;
 <br>
 
 
+
+
    <label>
      description:
 <br>
 
 <input type="textarea" formControlName="description"  class="txtArea">
+
 
  </label>
 <br>
@@ -165,9 +168,13 @@ background-color: #333;;
 
  <button type="submit" [disabled]="!userInformationForm.valid">Submit</button>
 </form>
+{{ userInformationForm.value | json }} 
+
 </div>
 </div>
+
 <hr>
+
 
 <router-outlet></router-outlet>
 

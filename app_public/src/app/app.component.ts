@@ -1,7 +1,8 @@
+import { ConnectionService } from './connection.service';
 
 import { Component } from '@angular/core';
 import { FormGroup, FormControl, Validator } from '@angular/forms';
-import { Validators } from '@angular/forms';
+
 
 @Component({
   selector: 'app-root',
@@ -25,7 +26,14 @@ export class AppComponent {
   });
 
  onSubmit() {
-   console.warn(this.userInformationForm.value);
+   console.log(this.userInformationForm.value);
+  this.userInformationForm.value
+     .subscribe(
+       response => console.log('Success!', response),
+       error => console.log('Error, error')
+     );
+
+
  }
 
 

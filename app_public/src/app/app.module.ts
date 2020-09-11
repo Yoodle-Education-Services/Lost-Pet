@@ -9,8 +9,9 @@ import { AboutUsComponent } from './about-us/about-us.component';
 import { ContactUsComponent } from './contact-us/contact-us.component';
 import { LostItemComponent } from './lost-item/lost-item.component';
 import { FoundedItemComponent } from './founded-item/founded-item.component';
-
+import { FormsModule } from '@angular/forms';
 import { SigninComponent } from './signin/signin.component';
+import { HearderComponent } from './hearder/hearder.component';
 import { RegistrationComponent } from './registration/registration.component';
 
 
@@ -24,10 +25,8 @@ import { RegistrationComponent } from './registration/registration.component';
     LostItemComponent,
     FoundedItemComponent,
     SigninComponent,
+    HearderComponent,
     RegistrationComponent,
-
-
-
 
 
   ],
@@ -36,6 +35,7 @@ import { RegistrationComponent } from './registration/registration.component';
     AppRoutingModule,
     BrowserAnimationsModule,
     ReactiveFormsModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
