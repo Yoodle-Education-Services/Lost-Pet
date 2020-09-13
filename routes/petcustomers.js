@@ -3,8 +3,6 @@ const router = express.Router()
 const Petcustomer = require('../models/petcustomers');
 
 
-
-
 //get all
 router.get("/", async (req, res) => {
     try {
@@ -33,7 +31,7 @@ lastName: req.body.lastName,
 email: req.body.email,
 phone: req.body.phone, 
 petName:req.body.petName,
-bread: req.body.breed,
+breed: req.body.breed,
 description:req.body.description,
 // moreInfo: req.body.moreInfo, 
 location: req.body.location,

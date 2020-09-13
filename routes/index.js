@@ -19,9 +19,6 @@ router.get('/about', function (req, res, next) {
 router.get('/contact', function (req, res, next) {
     res.render('contact', {title: 'Contact us'});
 });
-router.get('/pictures', function (req, res, next) {
-    res.render('pictures', {title: 'Pet pictures'});
-});
 
 router.get('/lost', function (req, res, next) {
     res.render('lost', {title: 'Lost items'});
