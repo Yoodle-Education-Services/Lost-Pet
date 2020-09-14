@@ -40,7 +40,7 @@ background-color: #333;;
   padding-left: 45px;
   padding-top: 35px;
   margin-right: 500px;
-  padding-bottom: 25px;
+  padding-bottom: 20px;
 
 }
 .log1{
@@ -88,8 +88,11 @@ background-color: #333;;
         <hr>
 </div>
 
+
+
+
 </div>
-<hr>
+<!-- <hr>
 <div class="moved">
     <h2>Get in touch and tell us what you lost or found</h2>
 
@@ -99,7 +102,7 @@ background-color: #333;;
   <label>
     First Name:
     <br>
-    <input type="text" formControlName="firstName" placeholder="Your first name">
+    <input type="text" formControlName="firstName" placeholder="Your first name" name="firstName">
  </label>
 <br>
 
@@ -107,14 +110,15 @@ background-color: #333;;
     Last Name:
     <br>
 
-    <input type="text" formControlName="lastName">
+<input type="text" formControlName="lastName" placeholder="Your lastt name" name="lastName">
+
  </label>
 <br>
 
    <label>
      E-mail:
      <br>
-    <input type="text" formControlName="email">
+    <input type="text" formControlName="email"  placeholder="Your email" name="email">
  </label>
 <br>
 
@@ -123,7 +127,7 @@ background-color: #333;;
      Phone:
 <br>
 
-    <input type="phone" formControlName="phone">
+    <input type="phone" formControlName="phone" placeholder="phone" name="phone">
  </label>
 <br>
 
@@ -131,7 +135,7 @@ background-color: #333;;
      Pet Name, if any:
 <br>
 
-    <input type="text" formControlName="petName">
+    <input type="text" formControlName="petName" placeholder="petName" name="petName">
  </label>
 <br>
 
@@ -139,7 +143,7 @@ background-color: #333;;
      Breed:
 <br>
 
-    <input type="text" formControlName="breed">
+    <input type="text" formControlName="breed" placeholder="breed" name="breed" >
  </label>
 <br>
 
@@ -150,7 +154,7 @@ background-color: #333;;
      description:
 <br>
 
-<input type="textarea" formControlName="description"  class="txtArea">
+<input type="textarea" formControlName="description"  class="txtArea" placeholder="description" name="description">
 
 
  </label>
@@ -162,18 +166,19 @@ background-color: #333;;
      Location:
 <br>
 
-    <input type="text" formControlName="location">
+    <input type="text" formControlName="location" placeholder="location" name="location">
  </label>
 <br>
 
  <button type="submit" [disabled]="!userInformationForm.valid">Submit</button>
+
 </form>
 {{ userInformationForm.value | json }}
 
 </div>
 </div>
 
-<hr>
+<hr> -->
 
 
 <router-outlet></router-outlet>
