@@ -1,3 +1,26 @@
-body{
-    background-color:rgb(240, 198, 135);
+
+    .left{
+        background-color: rgb(71, 58, 58);
+        width:40%;
+        height:760px;
+        color: rgb(244, 245, 244);
+        padding: 25px;
+        float: left;
+
+    }
+    .right{
+        color: rgb(244, 245, 244);
+        width:50%;
+        height:560px;
+        float: right;
+        padding-right: 20px;
+
+    }
+    body{
+     background-color: rgb(105, 92, 92);
+     font-family: 'Courier New', Courier, monospace;
+   }
+h3{
+
+  text-align: center;
 }
