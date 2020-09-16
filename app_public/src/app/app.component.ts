@@ -1,5 +1,5 @@
 import { ConnectionService } from './connection.service';
-import {FormBuilder} from '@angular/forms';
+import { FormBuilder, ReactiveFormsModule } from '@angular/forms';
 import { Component } from '@angular/core';
 import { FormGroup, FormControl, Validator } from '@angular/forms';
 import { from } from 'rxjs';
@@ -13,18 +13,36 @@ import { from } from 'rxjs';
 })
 
 export class AppComponent {
-  title = 'petproject';
-  userInformationForm = new FormGroup({
-    firstName: new FormControl(''),
-    lastName: new FormControl(''),
-    email: new FormControl(''),
-    phone: new FormControl(''),
-    petName: new FormControl(''),
-    breed: new FormControl(''),
-    description: new FormControl(''),
-    location: new FormControl(''),
+  constructor(private fb: FormBuilder){}
+   userInformationForm = this.fb.group({
 
-  });
+    firstName:[] ,
+    lastName:[],
+    email:[],
+    phone:[],
+    petName:[],
+    breed:[],
+    description:[],
+    location:[]
+
+ });
+//  onSubmit(){
+//    console.log('this.userInformationForm.value');
+
+//  }
+
+ // title = 'petproject';
+  // userInformationForm = new FormGroup({
+  //   firstName: new FormControl(''),
+  //   lastName: new FormControl(''),
+  //   email: new FormControl(''),
+  //   phone: new FormControl(''),
+  //   petName: new FormControl(''),
+  //   breed: new FormControl(''),
+  //   description: new FormControl(''),
+  //   location: new FormControl(''),
+
+  // });
 
   // constructor(private fb: FormBuilder, connectionService: ConnectionService) { };
  onSubmit() {

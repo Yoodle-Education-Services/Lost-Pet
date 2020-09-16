@@ -2,19 +2,21 @@
     .left{
         background-color: rgb(71, 58, 58);
         width:45%;
-        height:760px;
+        height:960px;
         color: rgb(244, 245, 244);
-        padding: 45px;
+        padding: 75px;
         float: left;
+
 
 
     }
     .right{
         color: rgb(244, 245, 244);
-        width:50%;
-        height:560px;
+        width:55%;
+        height:960px;
         float: right;
-        padding: 30px;
+        padding: 60px;
+        background-color: rgb(65, 76, 87);
 
     }
     body{
