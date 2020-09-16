@@ -1,7 +1,8 @@
 import { ConnectionService } from './connection.service';
-
+import {FormBuilder} from '@angular/forms';
 import { Component } from '@angular/core';
 import { FormGroup, FormControl, Validator } from '@angular/forms';
+import { from } from 'rxjs';
 
 
 @Component({
@@ -25,6 +26,7 @@ export class AppComponent {
 
   });
 
+  // constructor(private fb: FormBuilder, connectionService: ConnectionService) { };
  onSubmit() {
    console.log(this.userInformationForm.value);
   this.userInformationForm.value

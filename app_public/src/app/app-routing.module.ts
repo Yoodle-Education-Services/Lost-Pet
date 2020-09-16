@@ -1,3 +1,4 @@
+
 import { RegistrationComponent } from './registration/registration.component';
 import { NgModule, Component } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
@@ -16,7 +17,8 @@ const routes: Routes = [
   { path: 'founded-item', component: FoundedItemComponent },
   { path: 'lost-item', component: LostItemComponent },
   { path: 'registration', component: RegistrationComponent },
-  { path: 'signin', component: SigninComponent }
+  { path: 'signin', component: SigninComponent },
+
 
 ];
 

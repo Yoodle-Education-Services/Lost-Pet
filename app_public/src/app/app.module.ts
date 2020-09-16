@@ -13,6 +13,7 @@ import { FormsModule } from '@angular/forms';
 import { SigninComponent } from './signin/signin.component';
 import { HearderComponent } from './hearder/hearder.component';
 import { RegistrationComponent } from './registration/registration.component';
+import { NavbarComponent } from './navbar/navbar.component';
 
 
 
@@ -27,6 +28,7 @@ import { RegistrationComponent } from './registration/registration.component';
     SigninComponent,
     HearderComponent,
     RegistrationComponent,
+    NavbarComponent
 
 
   ],

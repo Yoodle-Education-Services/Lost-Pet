@@ -1,11 +1,12 @@
 
     .left{
         background-color: rgb(71, 58, 58);
-        width:40%;
+        width:45%;
         height:760px;
         color: rgb(244, 245, 244);
-        padding: 25px;
+        padding: 45px;
         float: left;
+
 
     }
     .right{
@@ -13,7 +14,7 @@
         width:50%;
         height:560px;
         float: right;
-        padding-right: 20px;
+        padding: 30px;
 
     }
     body{
