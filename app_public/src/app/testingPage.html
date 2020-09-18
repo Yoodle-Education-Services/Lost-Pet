@@ -1,23 +1,20 @@
-<div class="strange">
-
-<section class="hero is-primary is-bold">
-  <div class="hero-body">
-<div class="container">
-<h1 class="title">Contact us</h1>
-</div>
-</div>
-</section>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
 
 <section class="section">
 <div class="container">
-<!-- form here -->
 
-<form (ngSubmit)="submitForm()">
+<form>
 <div class="field">
 <label class="label">First Name</label>
 <input type="text" name="firsName" class="input" [(ngModel)]="firstName">
 </div>
-
 <div class="field">
 <label class="label">Last Name</label>
 <input type="text" name="lastName" class="input" [(ngModel)]="lastName">
@@ -25,22 +22,16 @@
 
 <div class="field">
 <label class="label">E-mail</label>
-<input type="email" name="email" class="input" [(ngModel)]="email">
+<input type="text" name="email" class="input" [(ngModel)]="email">
 </div>
 
 <div class="field">
 <label class="label">Your Message</label>
-<textarea name="message" class="textarea" [(ngModel)]="message"></textarea>
+<textarea type="text" name="message" class="textarea" [(ngModel)]="textarea"></textarea>
 
-
-</div>
-
-<button type="submit" class="button is-large is-warning"> Send</button>
+<button type="submit" class="button is-large is-warming"> Send</button>
 
 </form>
-
-
 </div>
-
-</section>
-</div>
+</body>
+</html>

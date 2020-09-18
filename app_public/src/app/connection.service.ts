@@ -6,7 +6,7 @@ import { Injectable } from '@angular/core';
   providedIn: 'root'
 })
 export class ConnectionService {
-   _url = 'http://localhost: 3000/add';
+   _url ='http://localhost:3000/add';
 
   constructor(private http: HttpClient) { }
    petcustomer(userData){

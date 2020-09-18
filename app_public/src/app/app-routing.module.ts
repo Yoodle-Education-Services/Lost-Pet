@@ -1,3 +1,4 @@
+import { PetcustomersComponent } from './petcustomers/petcustomers.component';
 
 import { RegistrationComponent } from './registration/registration.component';
 import { NgModule, Component } from '@angular/core';
@@ -18,6 +19,7 @@ const routes: Routes = [
   { path: 'lost-item', component: LostItemComponent },
   { path: 'registration', component: RegistrationComponent },
   { path: 'signin', component: SigninComponent },
+  { path: 'petcustomers', component: PetcustomersComponent}
 
 
 ];

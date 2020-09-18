@@ -1,6 +1,7 @@
+import { PetcustomersComponent } from './petcustomers/petcustomers.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
+import { NgModule, Component } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
@@ -15,8 +16,6 @@ import { HearderComponent } from './hearder/hearder.component';
 import { RegistrationComponent } from './registration/registration.component';
 import { NavbarComponent } from './navbar/navbar.component';
 
-
-
 @NgModule({
   declarations: [
     AppComponent,
@@ -28,7 +27,8 @@ import { NavbarComponent } from './navbar/navbar.component';
     SigninComponent,
     HearderComponent,
     RegistrationComponent,
-    NavbarComponent
+    NavbarComponent,
+    PetcustomersComponent
 
 
   ],
