@@ -3,6 +3,8 @@ const router = express.Router()
 const Petcustomer = require('../models/petcustomers');
 
 
+
+
 //get all
 router.get("/", async (req, res) => {
     try {
@@ -35,8 +37,13 @@ breed: req.body.breed,
 description:req.body.description,
 // moreInfo: req.body.moreInfo, 
 location: req.body.location,
+lat:req.body.lat,
+lng: req.body.lng
+
 
 })
+console.log(req.body);
+
 try {
 const newPetcustomer = await petcustomer.save()
 res.status(201).json(newPetcustomer)

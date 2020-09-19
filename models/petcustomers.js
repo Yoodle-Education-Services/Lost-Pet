@@ -43,6 +43,14 @@ const petcustomerSchema = new mongoose.Schema({
         location: {
             type: String
 
+        },
+        lat: {
+            type: String
+
+        },
+        lng: {
+            type: String
+
         }
      
         
