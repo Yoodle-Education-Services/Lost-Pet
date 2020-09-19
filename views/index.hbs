@@ -10,6 +10,7 @@
   color:rgb(12, 17, 6);
   background-color: rgb(133, 125, 93);
   color: white;
+ 
 }
 
 
@@ -32,7 +33,17 @@ sed do
 
    
    {{!-- // this part of css is for the form --}}
- 
+ <style>
+.textarea {
+
+  width: 247px;
+   background: white;
+   height: 86px;
+
+}
+
+
+ </style>
 
    
    </div>
@@ -56,12 +67,14 @@ sed do
 
   <div> <label><span>Breed: </span><input placeholder="its breed" class="input" type="text" name="bread" tabindex="6">
 </label>
-  </div>
+  </div> 
+  
+  
+  <div ><label><span>Message:</span><br>
+<textarea placeholder="Include all the details you can"
+ class="textarea" name="description" tabindex="7" >
 
-  <div>
-    <label>
-      <span>Message: </span>
-<textarea placeholder="Include all the details you can" class="Btextarea" name="description" tabindex="7"></textarea>
+</textarea>
 </label></div>
 
 <div><label><span>city:</span><input placeholder="City" class="input" type="text" name="city" tabindex="8"></label></div>
