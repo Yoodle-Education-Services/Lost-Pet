@@ -5,57 +5,43 @@
 {{!-- <p>Welcome, {{title}}</p> --}}
 <hr>
 <style>
-.contact-submit{
-  width: 260px;
-  color:rgb(12, 17, 6);
-  background-color: rgb(133, 125, 93);
-  color: white;
- 
-}
-#desc{
-  height: 16px;
-  width: 345px;
-  background-color: rgb(25, 43, 235);
-}
-.dd1{
-  background-color: rgb(14, 131, 119);
-  width:50%;
 
+
+#desc{
+  height: 316px;
+  width: 345px;
+  background-color: rgb(200, 207, 223);
 }
+
 .gmap{
-  background-color: rgb(218, 219, 171);
-  width:60%;
+  background-color: rgb(224, 183, 129);
+  width:50%;
   height: 960px;
   float: right;
   padding: 35px;
+  margin-right: 35px;
 }
 .newf{
-    background-color: darkblue;
+    background-color: rgb(170, 221, 197);
     float: left;
-    width: 40%;
-    
-    background-color:rgb(14, 10, 78);
-    padding: 44px;
+    width: 48%;
+    padding: 10px;
+    padding-left: 70px;
 }
 </style>
 
 
 </head>
 <body>
-<div class="dd1>
- <img src="../images/dog1.png" class="dog1">  
 
-</div>
-<!-- Special version of Bootstrap that only affects content wrapped in .bootstrap-iso -->
-<link rel="stylesheet" href="https://formden.com/static/cdn/bootstrap-iso.css" /> 
+
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
 
 <!-- Inline CSS based on choices in "Settings" tab -->
 <style>.bootstrap-iso .formden_header h2, .bootstrap-iso .formden_header p, .bootstrap-iso form{font-family: Arial, Helvetica, sans-serif; color: #252723}.bootstrap-iso form button, .bootstrap-iso form button:hover{color: #ffffff !important;} .asteriskField{color: red;}</style>
 
 <!-- HTML Form (wrapped in a .bootstrap-iso div) -->
 <style>
-
-
 
 </style>
 <div class="newf">
@@ -122,12 +108,7 @@
       </label>
       <textarea class="form-control" cols="60" id="message" name="description" rows="3" ></textarea>
      </div>
-     {{!-- <div class="form-group ">
-      <label class="control-label " for="name3">
-       City
-      </label>
-      <input class="form-control" id="name3" name="city" type="text"/>
-     </div> --}}
+
      <div class="form-group ">
       <label class="control-label " for="name5">
        Location
@@ -148,8 +129,7 @@
       </label>
       <input class="form-control" id="name7" name="lng" type="text"/>
      </div>
-     {{!-- ===
-      --}}
+ 
 
 <div class="form-group ">
     <label class="control-label " for="name8">
@@ -157,10 +137,7 @@
     </label>
     <input class="form-control" id="name8" name="upload" type="file"/>
 </div>
-<br>
-<br>
 
-      {{!-- ===== --}}
      <div class="form-group">
       <div>
         <br>
