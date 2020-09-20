@@ -3,6 +3,8 @@ const express = require('express');
 const path = require('path');
 const cookieParser = require('cookie-parser');
 const logger = require('morgan');
+const multer = require('multer');
+
 const host = process.env.DB_HOST || 'mongodb://127.0.0.1/petcustomers';
 
 const dbURL = `${host}`;

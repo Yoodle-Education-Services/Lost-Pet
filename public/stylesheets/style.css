@@ -183,8 +183,11 @@ li a:hover {
 #contact-form input[type="description"],
 #contact-form input[type="city"],
 #contact-form input[type="location"],
-#contact-form input[type="more info"],
-#contact-form input[type="text"],
+#contact-form input[type="more info"], 
+#contact-form input[type="number"],
+#contact-form input[type="number"],
+#contact-form input[type="file"],
+
 
 #contact-form textarea {
     width: 100%;

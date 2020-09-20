@@ -1,9 +1,8 @@
 const express = require('express')
 const router = express.Router()
 const Petcustomer = require('../models/petcustomers');
-
-
-
+const multer = require('multer')
+const upload = multer({dest: 'public/uploads/'})
 
 //get all
 router.get("/", async (req, res) => {
@@ -38,7 +37,8 @@ description:req.body.description,
 // moreInfo: req.body.moreInfo, 
 location: req.body.location,
 lat:req.body.lat,
-lng: req.body.lng
+lng: req.body.lng,
+upload: req.body.upload
 
 
 })
@@ -79,6 +79,11 @@ router.delete("/:id", getPetcustomer, async (req, res) => {
         res.status(500).json({message: err.message})
         
     }
+
+});
+
+router.post('/', upload.any(),function(req, res, next)  {
+    res.send(req.files);
 
 });
 

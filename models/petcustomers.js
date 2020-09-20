@@ -51,9 +51,13 @@ const petcustomerSchema = new mongoose.Schema({
         lng: {
             type: String
 
-        }
+        },
      
         
+        upload: {
+            type: String
+
+        }
       });
           
 module.exports = mongoose.model('Petcustomer', petcustomerSchema);
