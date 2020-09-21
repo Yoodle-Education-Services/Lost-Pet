@@ -22,8 +22,10 @@ export class PetcustomersComponent implements OnInit {
     petName: [],
     breed: [],
     description: [],
-    location: []
-
+    location: [],
+    lat: [],
+    lng: [],
+    upload:[]
   });
 
   ngOnInit(): void {
