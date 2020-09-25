@@ -1,0 +1,15 @@
+<div class="markmap-area">
+  <agm-map 
+    [latitude]="latitude" 
+    [longitude]="longitude" 
+    [zoom]="zoom" 
+    (mapClick)="markLocation($event)">
+
+    <agm-marker 
+      [latitude]="latitude" 
+      [longitude]="longitude"
+      >
+    </agm-marker>
+
+  </agm-map>
+</div>
