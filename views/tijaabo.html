@@ -1,55 +1,5 @@
-
-{{>nav }}
-
-<h1>{{title}}</h1>
-{{!-- <p>Welcome, {{title}}</p> --}}
-
-
-<hr>
-<style>
-
-
-#desc{
-  height: 312px;
-  width: 345px;
-
-}
-
-.gmap{
-  background-color: rgb(224, 183, 129);
-  width:50%;
-  height: 950px%;
-  float: right;
-  padding: 35px;
-  margin-right: 30px;
-}
-.newf{
-
-
-background-color: rgb(224, 183, 129);
-
-    float: left;
-    width: 45%;
-    padding: 10px;
-    padding-left: 70px;
-    margin-left: 15px;
-}
-.up{
-
-width:100%;
-
-background-color: maroon;
-
-}
-
-</style>
-
-
-</head>
-<body>
-
-
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+<!-- Special version of Bootstrap that only affects content wrapped in .bootstrap-iso -->
+<link rel="stylesheet" href="https://formden.com/static/cdn/bootstrap-iso.css" /> 
 
 <!-- Inline CSS based on choices in "Settings" tab -->
 <style>.bootstrap-iso .formden_header h2, .bootstrap-iso .formden_header p, .bootstrap-iso form{font-family: Arial, Helvetica, sans-serif; color: #252723}.bootstrap-iso form button, .bootstrap-iso form button:hover{color: #ffffff !important;} .asteriskField{color: red;}</style>
@@ -57,6 +7,15 @@ background-color: maroon;
 <!-- HTML Form (wrapped in a .bootstrap-iso div) -->
 <style>
 
+
+.newf{
+    background-color: darkblue;
+    float: right;
+    width: 650px;
+    margin-right: 286px;
+    background-color: darkcyan;
+    padding: 34px;
+}
 </style>
 <div class="newf">
 <div class="bootstrap-iso">
@@ -64,7 +23,7 @@ background-color: maroon;
   <div class="row">
    <div class="col-md-4 col-sm-4 col-xs-8">
     <form id="contact-form" action ="/add" method="post">
-<div class="form-group ">
+     <div class="form-group ">
          <br>
       <label class="control-label requiredField" for="name">
        First Name
@@ -73,8 +32,8 @@ background-color: maroon;
        </span>
       </label>
       <input class="form-control" id="name" name="firstName" type="text"/>
-     {{!-- </div> --}}
-     {{!-- <div class="form-group "> --}}
+     </div>
+     <div class="form-group ">
       <label class="control-label requiredField" for="name4">
        Last Name
        <span class="asteriskField">
@@ -84,7 +43,6 @@ background-color: maroon;
       <input class="form-control" id="name4" name="lastName" type="text"/>
      </div>
 
-
      <div class="form-group ">
       <label class="control-label requiredField" for="number">
        Phone
@@ -92,7 +50,7 @@ background-color: maroon;
         *
        </span>
       </label>
-      <input class="form-control" id="number" name="tel" type="tel"/>
+      <input class="form-control" id="number" name="tel" type="text"/>
      </div>
      <div class="form-group ">
       <label class="control-label requiredField" for="email">
@@ -115,50 +73,47 @@ background-color: maroon;
       </label>
       <input class="form-control" id="name2" name="breed" type="text"/>
      </div>
-
-     <div class="form-group " >
+     <div class="form-group ">
       <label class="control-label " for="message">
        Description details
       </label>
-      <textarea class="form-control" cols="60" id="message" name="description" rows="3" ></textarea>
+      <textarea class="form-control" cols="30" id="message" name="description" rows="10"></textarea>
      </div>
-
+     <div class="form-group ">
+      <label class="control-label " for="name3">
+       City
+      </label>
+      <input class="form-control" id="name3" name="city" type="text"/>
+     </div>
      <div class="form-group ">
       <label class="control-label " for="name5">
        Location
       </label>
       <input class="form-control" id="name5" name="Location" type="text"/>
      </div>
-    
      <div class="form-group ">
       <label class="control-label " for="name6">
        Latitude
       </label>
       <input class="form-control" id="name6" name="lat" type="text"/>
      </div>
-
      <div class="form-group ">
       <label class="control-label " for="name7">
        Longitude
       </label>
       <input class="form-control" id="name7" name="lng" type="text"/>
      </div>
- 
-
-<div class="form-group ">
-    <label class="control-label " for="name8">
-        upload picture.
-    </label>
-    <input class="form-control" id="name8" name="upload" type="file" class="up"/>
-</div>
-
+     <div class="form-group ">
+      <label class="control-label " for="name8">
+       Submit
+      </label>
+      <input class="form-control" id="name8" name="name8" type="text"/>
+     </div>
      <div class="form-group">
       <div>
-        <br>
        <button class="btn btn-primary btn-lg" name="submit" type="submit">
         Submit
        </button>
-
       </div>
      </div>
     </form>
@@ -167,16 +122,3 @@ background-color: maroon;
  </div>
 </div>
 </div>
-<div class="gmap">
-    <h3>Welcome to Pet -Central</h3>To send a complete information about where you lost or found the pet, 
-    you can select the position at the map, and fill the form.
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-
-    
-    
-    
-    </p></div>
-
-
-<br>
-{{> footer}}

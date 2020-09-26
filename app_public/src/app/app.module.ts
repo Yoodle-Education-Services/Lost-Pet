@@ -1,3 +1,4 @@
+import { HttpClient } from '@angular/common/http';
 import { PetcustomersComponent } from './petcustomers/petcustomers.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
@@ -12,10 +13,9 @@ import { LostItemComponent } from './lost-item/lost-item.component';
 import { FoundedItemComponent } from './founded-item/founded-item.component';
 import { FormsModule } from '@angular/forms';
 import { SigninComponent } from './signin/signin.component';
-import { HearderComponent } from './hearder/hearder.component';
 import { RegistrationComponent } from './registration/registration.component';
 import { NavbarComponent } from './navbar/navbar.component';
-
+import { HttpClientModule} from '@angular/common/http';
 @NgModule({
   declarations: [
     AppComponent,
@@ -25,7 +25,6 @@ import { NavbarComponent } from './navbar/navbar.component';
     LostItemComponent,
     FoundedItemComponent,
     SigninComponent,
-    HearderComponent,
     RegistrationComponent,
     NavbarComponent,
     PetcustomersComponent
@@ -36,6 +35,7 @@ import { NavbarComponent } from './navbar/navbar.component';
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
+    HttpClientModule,
     ReactiveFormsModule,
     FormsModule
   ],

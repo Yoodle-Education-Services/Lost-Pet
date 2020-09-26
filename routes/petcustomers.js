@@ -42,7 +42,7 @@ upload: req.body.upload
 
 
 })
-console.log(req.body);
+console.log("post call",req.body);
 
 try {
 const newPetcustomer = await petcustomer.save()
@@ -87,6 +87,20 @@ router.post('/', upload.any(),function(req, res, next)  {
 
 });
 
+// ========
+
+
+// get all
+router.get("/", async (req, res) => {
+    try {
+        var result = await Petcustomer.find({});
+        res.send('display', { petcustomers: petcustomers});
+    } catch (error) {
+        res.status(500).send(error);
+    }
+});
+
+
 
 ///a general funcion
 
@@ -104,6 +118,23 @@ router.post('/', upload.any(),function(req, res, next)  {
   res.petcustomer = petcustomer
   next()
  }
+
+// to be used for display
+
+router.get('/get-data', function (req, res, next){
+var resultArray = [];
+
+mongo.connect(url, function(err, db) {
+	var cursor = db.collection('petcustomer').find();
+cursor.foreach(function(doc, err){
+	resultArray.push(doc);
+	}, function(){
+	db.close();
+	res.render('display', {items: resultArray})
+       });
+   });
+});
+
 
 
 

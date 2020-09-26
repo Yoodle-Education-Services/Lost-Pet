@@ -16,36 +16,22 @@ export class AppComponent {
   constructor(private fb: FormBuilder){}
    userInformationForm = this.fb.group({
 
-    firstName:[] ,
-    lastName:[],
-    email:[],
-    phone:[],
-    petName:[],
-    breed:[],
-    description:[],
-    location:[]
+     firstName: [],
+     lastName: [],
+     email: [],
+     phone: [],
+     petName: [],
+     breed: [],
+     description: [],
+     location: [],
+     lat: [],
+     lng: [],
+     upload: []
+
 
  });
 
-//  onSubmit(){
-//    console.log('this.userInformationForm.value');
-
-//  }
-
- // title = 'petproject';
-  // userInformationForm = new FormGroup({
-  //   firstName: new FormControl(''),
-  //   lastName: new FormControl(''),
-  //   email: new FormControl(''),
-  //   phone: new FormControl(''),
-  //   petName: new FormControl(''),
-  //   breed: new FormControl(''),
-  //   description: new FormControl(''),
-  //   location: new FormControl(''),
-
-  // });
-
-  // constructor(private fb: FormBuilder, connectionService: ConnectionService) { };
+  
  onSubmit() {
    console.log(this.userInformationForm.value);
   this.userInformationForm.value

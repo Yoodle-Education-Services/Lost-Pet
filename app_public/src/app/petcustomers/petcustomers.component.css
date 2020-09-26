@@ -3,16 +3,33 @@
 .form1 {
 
 background-color : cadetblue;
-width:560px;
+width:47%;
 float: right;
-padding: 5px;
-margin-right: 495px;
+padding-top: 15px;
+
 display : flex;
 position: relative;
-padding-left: 90px;
-padding-right: 90px;
-margin-top: 5px;
+padding-left: 135px;
+padding-right: 120px;
+padding-bottom: 25px;
+
 
 }
+.rtside{
+  background-color: yellowgreen;
+  float: left;
+  width:50%;
+  height: 750pc;
+  margin-left: 2px;
+  padding-top: 15px;
+}
 
-
+input[type=text], select {
+width:100%;
+padding: 12px 20px;
+margin: 8px 0;
+display:inline-block;
+border:1px solid #ccc;
+border-radius:4px;
+box-sizing:boder-box;
+}
