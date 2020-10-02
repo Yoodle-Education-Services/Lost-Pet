@@ -1,0 +1,19 @@
+
+    .left{
+        background-color: rgb(71, 58, 58);
+        width:30%;
+        height:760px;
+        color: rgb(219, 223, 219);
+        padding: 20px;
+
+    }
+    .rigt{
+        color: rgb(230, 204, 204);
+        width:60%;
+        height:560px;
+
+    }
+   body{
+     background-color: black;
+   }
+   

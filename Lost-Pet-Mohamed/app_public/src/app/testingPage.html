@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+
+<section class="section">
+<div class="container">
+
+<form>
+<div class="field">
+<label class="label">First Name</label>
+<input type="text" name="firsName" class="input" [(ngModel)]="firstName">
+</div>
+<div class="field">
+<label class="label">Last Name</label>
+<input type="text" name="lastName" class="input" [(ngModel)]="lastName">
+</div>
+
+<div class="field">
+<label class="label">E-mail</label>
+<input type="text" name="email" class="input" [(ngModel)]="email">
+</div>
+
+<div class="field">
+<label class="label">Your Message</label>
+<textarea type="text" name="message" class="textarea" [(ngModel)]="textarea"></textarea>
+
+<button type="submit" class="button is-large is-warming"> Send</button>
+
+</form>
+</div>
+</body>
+</html>
