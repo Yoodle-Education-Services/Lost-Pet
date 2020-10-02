@@ -1,0 +1,11 @@
+GET http://localhost:3000/petcustomers
+
+###
+
+GET http://localhost:3000/petcustomers/
+
+###
+POST  http://localhost:3000/localhost:3000/
+
+###
+DELETE http://localhost:3000/petcustomers/5f7654d92f62ad0894eaa612
